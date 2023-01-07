@@ -1,1 +1,1 @@
-System.register([],(function(e){"use strict";return{execute:function(){e("_","/vue-official-website/assets/home-banner@2x.d23514e7.png")}}}));
+System.register([],(function(e){"use strict";return{execute:function(){e("_",""+new URL("home-banner@2x.d23514e7.png",module.meta.url).href)}}}));
