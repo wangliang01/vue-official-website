@@ -7,16 +7,16 @@ set -e
 yarn build
 
 # 进入构建文件夹
-# cd dist
+cd dist
 
 # 放置 .nojekyll 以绕过 Jekyll 的处理。
-# echo > .nojekyll
+echo > .nojekyll
 
 # 如果你要部署到自定义域名
 # echo 'www.example.com' > CNAME
 
 git init
-# git checkout -B main
+git checkout -B main
 git add -A
 git commit -m 'deploy'
 
@@ -24,6 +24,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # 如果你要部署在 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:<wangliang01>/<vue-official-website>.git main:gh-pages
+git push -f git@github.com:wangliang01/vue-official-website.git main:gh-pages
 
 cd -
