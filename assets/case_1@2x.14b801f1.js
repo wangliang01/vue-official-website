@@ -1,1 +1,1 @@
-const e=""+new URL("case_1@2x.e57e9026.png",import.meta.url).href;export{e as _};
+const s="/assets/case_1@2x.e57e9026.png";export{s as _};
