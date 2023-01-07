@@ -9,7 +9,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/vue-official-website/',
   server: {
     host: '0.0.0.0'
   },
