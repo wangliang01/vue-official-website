@@ -8,13 +8,43 @@
     />
     <div class="mt-7 px-4 xs:block md:hidden">
       <div class="flex justify-between">
-        <div class="nav-item active mr-18">全部</div>
-        <div class="nav-item w-20 text-left">工业制造</div>
-        <div class="nav-item w-20 text-right">医疗健康</div>
+        <div
+          class="nav-item mr-18"
+          :class="[currentNav === 'all' && 'active']"
+          @click="handleNavigateTo('all')"
+        >
+          全部
+        </div>
+        <div
+          class="nav-item w-20 text-left"
+          :class="[currentNav === 'product' && 'active']"
+          @click="handleNavigateTo('product')"
+        >
+          工业制造
+        </div>
+        <div
+          class="nav-item w-20 text-right"
+          :class="[currentNav === 'medical' && 'active']"
+          @click="handleNavigateTo('medical')"
+        >
+          医疗健康
+        </div>
       </div>
       <div class="flex mt-8">
-        <div class="nav-item w-20 mr-9">家具家电</div>
-        <div class="nav-item w-20">软件界面</div>
+        <div
+          class="nav-item w-20 mr-9"
+          :class="[currentNav === 'furniture' && 'active']"
+          @click="handleNavigateTo('furniture')"
+        >
+          家具家电
+        </div>
+        <div
+          class="nav-item w-20"
+          :class="[currentNav === 'software' && 'active']"
+          @click="handleNavigateTo('software')"
+        >
+          软件界面
+        </div>
       </div>
     </div>
 
@@ -69,7 +99,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>
@@ -81,7 +111,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>
@@ -93,7 +123,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>
@@ -105,7 +135,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>
@@ -117,7 +147,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>
@@ -129,7 +159,7 @@
         />
         <div class="description">
           <span class="name">LYCN-302设备</span>
-          <p class="label">工业制造</p>
+          <p class="label xs:hidden">工业制造</p>
           <i class="more md:hidden"></i>
         </div>
       </div>

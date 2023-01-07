@@ -17,10 +17,11 @@
       <img
         src="../../assets/icons/list@2x.png"
         alt="list"
-        class="sm:hidden xs:inline w-6 h-4"
+        class="sm:hidden xs:inline w-6 h-4 cursor-pointer"
+        @click="handleShowList"
       />
       <nav
-        class="md:flex sm:inline xl:pl-27.5 2xl:pl-27.5 lg:pl-8 md:pl-4 sm:pl-2 flex-1 h-full"
+        class="xs:hidden sm:inline xl:pl-27.5 2xl:pl-27.5 lg:pl-8 md:pl-4 sm:pl-2 flex-1 h-full"
       >
         <ul class="flex items-center h-full">
           <li
@@ -75,6 +76,43 @@
         class="w-full md:h-100"
       />
     </div>
+
+    <!-- mask -->
+    <div
+      v-show="show"
+      class="mask md:hidden fixed left-0 bottom-0 right-0 top-0"
+    >
+      <ul class="mt-40 text-center text-7.5xl text-white">
+        <li
+          class="mb-8"
+          :class="[currentPath === '/' && 'active']"
+          @click="handleNavigateTo('/')"
+        >
+          <span>首页</span>
+        </li>
+        <li
+          class="mb-8"
+          :class="[currentPath === '/case' && 'active']"
+          @click="handleNavigateTo('/case')"
+        >
+          <span>设计服务</span>
+        </li>
+        <li
+          class="mb-8"
+          :class="[currentPath === '/contract-us' && 'active']"
+          @click="handleNavigateTo('/contract-us')"
+        >
+          <span>联系我们</span>
+        </li>
+        <li
+          class="mb-8"
+          :class="[currentPath === '/about-us' && 'active']"
+          @click="handleNavigateTo('/about-us')"
+        >
+          <span>关于我们</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -90,15 +128,26 @@ export default {
     const router = useRouter()
     const currentPath = ref(route.path)
     console.log('route', route.path)
+    const show = ref(false)
 
     const handleNavigateTo = (path) => {
       router.push(path)
 
       currentPath.value = path
+
+      if (show.value) {
+        show.value = false
+      }
+    }
+
+    const handleShowList = () => {
+      show.value = true
     }
     return {
+      show,
       currentPath,
-      handleNavigateTo
+      handleNavigateTo,
+      handleShowList
     }
   }
 }
@@ -160,6 +209,28 @@ export default {
       animation-duration: 2s;
       animation-delay: 1s;
       animation-iteration-count: infinite;
+    }
+  }
+
+  .mask {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    li {
+      span {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        line-height: 38px;
+      }
+      &.active span::after {
+        position: absolute;
+        width: 100%;
+        content: '';
+        height: 4px;
+        left: 0;
+        background-color: rgba(239, 4, 4, 1);
+        bottom: -8px;
+      }
     }
   }
 }
