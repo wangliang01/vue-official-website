@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="mt-5 md:mt-30 flex items-center px-4 md:px-16 mb-16">
+    <div class="mt-5 md:mt-30 flex items-center px-4 md:px-40 mb-16">
       <img src="../../assets/icons/icon1@2x.png" class="w-12" alt="" />
       <p class="ml-4">
         苏州邦为设计，2013年成立于。为各行业制造企业及
