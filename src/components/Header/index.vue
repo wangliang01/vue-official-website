@@ -63,7 +63,10 @@
       </div>
     </div>
     <!-- banner -->
-    <div class="banner w-full xs:hidden md:block md:h-100">
+    <div
+      v-if="['/', '/case', '/about-us'].includes(currentPath)"
+      class="banner w-full xs:hidden md:block md:h-100"
+    >
       <img
         src="../../assets/icons/banner@2x.png"
         alt="banner"
@@ -86,7 +89,7 @@
         </li>
         <li
           class="mb-8"
-          :class="[currentPath === '/case' && 'active']"
+          :class="[currentPath.startsWith('/case') && 'active']"
           @click="handleNavigateTo('/case')"
         >
           <span>设计服务</span>
@@ -126,7 +129,7 @@ export default {
     const show = ref(false)
 
     watch(
-      () => route.path,
+      () => hash,
       (newValue) => {
         currentPath.value = newValue
       }
