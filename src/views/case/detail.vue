@@ -2,7 +2,7 @@
   <div class="case-detail">
     <img
       src="../../assets/icons/home-banner@2x.png"
-      class="w-full h-100 object-cover"
+      class="w-full md:h-100 object-cover"
       alt=""
     />
 

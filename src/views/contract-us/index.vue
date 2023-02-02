@@ -50,7 +50,7 @@
         制造助力中国制造助力中国制造
       </div>
 
-      <y-swiper class="mb-22"></y-swiper>
+      <y-swiper class="mb-22 xs:hidden md:block"></y-swiper>
     </div>
   </div>
 </template>
