@@ -91,7 +91,7 @@
     <div
       class="px-4 grid gap-x-2 gap-y-4 grid-cols-2 my-6 md:bg-white md:gap-x-4 md:grid-cols-4 md:py-4 md:px-3 md:mx-4"
     >
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -103,7 +103,7 @@
           <i class="more md:hidden"></i>
         </div>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -115,7 +115,7 @@
           <i class="more md:hidden"></i>
         </div>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -127,7 +127,7 @@
           <i class="more md:hidden"></i>
         </div>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -139,7 +139,7 @@
           <i class="more md:hidden"></i>
         </div>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -151,7 +151,7 @@
           <i class="more md:hidden"></i>
         </div>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="handleDetail">
         <img
           src="../../assets/icons/case_1@2x.png"
           alt=""
@@ -169,6 +169,7 @@
 
 <script>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 export default {
   name: 'Case',
   components: {},
@@ -176,12 +177,20 @@ export default {
   setup() {
     const currentNav = ref('all')
 
+    const router = useRouter()
     const handleNavigateTo = (nav) => {
       currentNav.value = nav
     }
+
+    const handleDetail = () => {
+      router.push({
+        path: '/case/detail'
+      })
+    }
     return {
       currentNav,
-      handleNavigateTo
+      handleNavigateTo,
+      handleDetail
     }
   }
 }

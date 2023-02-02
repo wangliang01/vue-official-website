@@ -31,6 +31,9 @@ module.exports = {
         '2xl': '1536px'
         // => @media (min-width: 1536) { ... }
       },
+      inset: {
+        15: '60px'
+      },
       width: {
         13: '52px',
         15: '60px',
@@ -72,6 +75,7 @@ module.exports = {
         27: '108px',
         30: '120px',
         46: '192px',
+        50: '200px',
         100: '400px'
       },
       fontSize: {
