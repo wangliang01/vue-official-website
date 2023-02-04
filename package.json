@@ -12,6 +12,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "element-plus": "^2.2.13",
     "mitt": "^3.0.0",
     "terser": "^5.16.0",

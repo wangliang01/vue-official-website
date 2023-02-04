@@ -1,6 +1,7 @@
 <template>
   <div class="contract-us bg-white">
-    <img src="../../assets/icons/map1@2x.png" alt="" class="w-full lg:h-100" />
+    <!-- <img src="../../assets/icons/map1@2x.png" alt="" class="w-full lg:h-100" /> -->
+    <Maps></Maps>
     <div class="md:container md:mx-auto md:shadow-xl overflow-hidden">
       <div class="mt-6 text-center md:mt-22">
         <img
@@ -52,9 +53,10 @@
 </template>
 
 <script>
+import Maps from '@/components/Maps/index.vue'
 export default {
   name: '',
-  components: {},
+  components: { Maps },
   props: {},
   setup() {
     return {}

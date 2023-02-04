@@ -11,6 +11,8 @@ declare module '@vue/runtime-core' {
     Card: typeof import('./src/components/Card/index.vue')['default']
     Footer: typeof import('./src/components/Footer/index.vue')['default']
     Header: typeof import('./src/components/Header/index.vue')['default']
+    Map: typeof import('./src/components/Map/index.vue')['default']
+    Maps: typeof import('./src/components/Maps/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Slider: typeof import('./src/components/Slider/slider.vue')['default']
