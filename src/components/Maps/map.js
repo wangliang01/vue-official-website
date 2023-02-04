@@ -25,7 +25,7 @@ function useMap(el = 'container', options = {}) {
 // 添加marker
 function addMarker(map, AMap) {
   const marker = new AMap.Marker({
-    icon: '/pos.png',
+    icon: 'http://yyx-mall.oss-cn-chengdu.aliyuncs.com/icons/pos.png?x-oss-process=image/resize,h_40,m_lfit',
     position: [120.538848, 31.276795],
     anchor: 'bottom-center'
   })
