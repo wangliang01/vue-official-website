@@ -2,7 +2,7 @@
   <div class="case-detail">
     <img
       src="../../assets/icons/home-banner@2x.png"
-      class="w-full md:h-100 object-cover"
+      class="w-full object-cover"
       alt=""
     />
 
@@ -100,12 +100,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.case-detail {
-  @screen md {
-    position: relative;
-    @apply -mt-100;
-  }
-}
 .desc {
   font-size: 8px;
   font-family: PingFang, Microsoft YaHei;

@@ -129,7 +129,7 @@ export default {
     const show = ref(false)
 
     watch(
-      () => hash,
+      () => route.path,
       (newValue) => {
         currentPath.value = newValue
       }
