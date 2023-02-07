@@ -25,29 +25,38 @@
     </div>
 
     <div class="xs:hidden md:block md:container md:mx-auto shadow-xl">
-      <y-card
-        layout="text-image"
-        class="px-40 pt-19"
-        style="margin-bottom: 76px"
-      >
-        <template #label>UI/软件界面</template>
-        <template #title> 《艾尔克—新风系统》</template>
-        <template #content>
-          <div class="xs:hidden sm:block">
+      <div class="px-40 pt-19 flex justify-between">
+        <div
+          class="left border-t border-b border-solid border-black sm:mr-10 lg:mr-30 sm:pb-12 lg:pb-25"
+        >
+          <p class="card-label mt-6">
+            <slot name="label">工业 / 公共设备</slot>
+          </p>
+          <h3 class="card-title">
+            <slot name="title">《机场闸机》</slot>
+          </h3>
+          <p class="card-desc">
             以极致精简的美学，结合科技与艺术、材料与工艺、色彩与流行趋势、
             品牌与文化等因素、创造出未来可以批量生产的产品。品牌与文化等
             因素、创造出未来可以批量生产的产品。
-          </div>
-
-          <div class="xs:block sm:hidden">
-            以极致精简的美学，结合科技与艺术、材 料与工艺、色彩与流行趋势、
-            品牌与文化 等因素
-          </div>
-        </template>
-      </y-card>
+          </p>
+          <p class="card-tips">
+            以极致精简的美学，结合科技与艺术、材料与工艺、色彩与流行趋势、
+            品牌与文化等因素、创造出未来可以批量生产的产品。品牌与文化等
+            因素、创造出未来可以批量生产的产品。
+          </p>
+        </div>
+        <div class="right card-image">
+          <img
+            src="../../assets/icons/card1@2x.png"
+            alt="card1"
+            class="w-full h-full"
+          />
+        </div>
+      </div>
       <img
         src="../../assets/icons/case_2@2x.png"
-        class="w-full mt-6 object-cover"
+        class="w-full mt-6 md:mt-20 object-cover"
         alt=""
       />
       <div class="overflow-hidden">
@@ -151,5 +160,53 @@ export default {
       background-size: 100%;
     }
   }
+}
+
+.left {
+  flex: 3;
+}
+.right {
+  max-width: 470px;
+  flex: 2;
+}
+
+.card-title {
+  position: relative;
+  left: -14px;
+  font-size: 30px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #282828;
+  @screen md {
+    margin-top: 48px;
+    font-size: 24px;
+  }
+  @screen xl {
+    margin-top: 132px;
+  }
+}
+.card-desc {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  @screen md {
+    margin-top: 12px;
+  }
+  @screen xl {
+    margin-top: 32px;
+  }
+}
+.card-tips {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  @screen md {
+    margin-top: 12px;
+  }
+  @screen xl {
+    margin-top: 32px;
+  }
+}
+
+.card-image {
+  width: 470px;
 }
 </style>

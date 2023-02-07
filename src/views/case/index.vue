@@ -4,7 +4,7 @@
       src="../../assets/icons/design@2x.png"
       alt=""
       class="h-30 md:block xs:hidden md:px-4"
-      style="margin-top: -322px"
+      style="margin-top: -310px"
     />
     <div class="mt-7 px-4 xs:block md:hidden">
       <div class="flex justify-between">
