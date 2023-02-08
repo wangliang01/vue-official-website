@@ -205,7 +205,7 @@ export default {
 .nav-item {
   position: relative;
   font-size: 20px;
-  font-family: PingFang, PingFang, Microsoft YaHei;
+  font-family: PingFang, PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #282828;
   line-height: 24px;
@@ -223,7 +223,7 @@ export default {
   @screen md {
     width: 140px;
     font-size: 26px;
-    font-family: PingFang, Microsoft YaHei;
+    font-family: PingFang, Microsoft YaHei Regular;
     font-weight: bold;
     color: #282828;
     color: #fff;
@@ -278,7 +278,7 @@ export default {
           width: 100%;
           text-align: center;
           font-size: 36px;
-          font-family: PingFang, Microsoft YaHei;
+          font-family: PingFang, Microsoft YaHei Regular;
           font-weight: bold;
           color: #ffffff;
         }
@@ -288,7 +288,7 @@ export default {
           width: 100%;
           text-align: center;
           font-size: 16px;
-          font-family: PingFang, Microsoft YaHei;
+          font-family: PingFang, Microsoft YaHei Regular;
           color: #ffffff;
         }
       }

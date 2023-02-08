@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 .desc {
   font-size: 12px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #808080;
   line-height: 24px;
@@ -77,7 +77,7 @@ export default {
 .content {
   background-color: #424242;
   font-size: 12px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #ffffff;
   line-height: 24px;
@@ -85,7 +85,7 @@ export default {
 
   @screen md {
     font-size: 24px;
-    font-family: Microsoft YaHei;
+    font-family: Microsoft YaHei Regular;
     font-weight: bold;
     line-height: 2;
     color: #ffffff;
@@ -94,13 +94,13 @@ export default {
 
 .slogan {
   font-size: 18px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 500;
   color: #808080;
   line-height: 24px;
   @screen md {
     font-size: 60px;
-    font-family: PingFang, Microsoft YaHei;
+    font-family: PingFang, Microsoft YaHei Regular;
     font-weight: bold;
     color: #808080;
     line-height: 1.5;

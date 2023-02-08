@@ -27,7 +27,7 @@ export default {
   padding: 7px 32px 8px;
   font-size: 18px;
   line-height: 18px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #ffffff;
   border-radius: 30px;

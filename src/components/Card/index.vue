@@ -234,7 +234,7 @@ const handleNext = () => {
     .card-number {
       margin-top: 20px;
       font-size: 26px;
-      font-family: PingFang, Microsoft YaHei;
+      font-family: PingFang, Microsoft YaHei Regular;
       font-weight: 400;
       line-height: 22px;
       color: #808080;
@@ -273,14 +273,14 @@ const handleNext = () => {
     .card-label {
       font-size: 18px;
       line-height: 18px;
-      font-family: PingFang, Microsoft YaHei;
+      font-family: PingFang, Microsoft YaHei Regular;
       font-weight: 400;
       color: #282828;
       @apply sm:mt-8 md:mt-12;
       @screen xs {
         margin-top: 8px;
         font-size: 8px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #808080;
       }
@@ -296,7 +296,7 @@ const handleNext = () => {
         margin-left: -8px;
         margin-top: 5px;
         font-size: 16px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 500;
         color: #282828;
       }
@@ -304,7 +304,7 @@ const handleNext = () => {
         margin-left: -14px;
         margin-top: 12px;
         font-size: 30px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 500;
         color: #282828;
       }
@@ -313,7 +313,7 @@ const handleNext = () => {
       @screen xs {
         margin-top: 18px;
         font-size: 8px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #808080;
         line-height: 11px;
@@ -321,7 +321,7 @@ const handleNext = () => {
       @screen sm {
         margin-top: 32px;
         font-size: 14px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         line-height: 20px;
         color: #808080;

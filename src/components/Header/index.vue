@@ -160,7 +160,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #282828;
   .logo {

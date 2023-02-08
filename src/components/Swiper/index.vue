@@ -2,25 +2,53 @@
   <div class="relative overflow-hidden">
     <div ref="swiper" class="swiper xs:hidden md:flex px-2.5">
       <div ref="swiper-item" class="swiper-item">
-        <img src="../../assets/icons/slider_1@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_1@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_2@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_2@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_3@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_3@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_4@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_4@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_4@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_4@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_5@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_5@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
       <div class="swiper-item">
-        <img src="../../assets/icons/slider_6@2x.png" alt="" />
+        <img
+          src="../../assets/icons/slider_6@2x.png"
+          alt=""
+          @click="handleDetail"
+        />
       </div>
     </div>
     <div class="btn btn-prev" @click="handlePrev">
@@ -44,6 +72,11 @@ export default {
     }
   },
   methods: {
+    handleDetail() {
+      this.$router.push({
+        path: '/case/detail'
+      })
+    },
     handleLink() {
       this.$router.push({
         path: '/case'

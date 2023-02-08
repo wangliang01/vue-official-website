@@ -111,7 +111,7 @@ export default {
 <style lang="scss" scoped>
 .desc {
   font-size: 8px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #808080;
   line-height: 11px;
@@ -119,7 +119,7 @@ export default {
 
 .title {
   font-size: 16px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #282828;
   line-height: 22px;
@@ -129,7 +129,7 @@ export default {
 
 .content {
   font-size: 8px;
-  font-family: PingFang, Microsoft YaHei;
+  font-family: PingFang, Microsoft YaHei Regular;
   font-weight: 400;
   color: #808080;
   line-height: 11px;
@@ -174,7 +174,7 @@ export default {
   position: relative;
   left: -14px;
   font-size: 30px;
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei Regular;
   font-weight: bold;
   color: #282828;
   @screen md {
@@ -187,7 +187,7 @@ export default {
 }
 .card-desc {
   font-size: 14px;
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei Regular;
   @screen md {
     margin-top: 12px;
   }
@@ -197,7 +197,7 @@ export default {
 }
 .card-tips {
   font-size: 12px;
-  font-family: Microsoft YaHei;
+  font-family: Microsoft YaHei Regular;
   @screen md {
     margin-top: 12px;
   }

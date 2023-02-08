@@ -148,7 +148,7 @@ export default {
       @screen xs {
         margin-bottom: 20px;
         font-size: 10px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #ffffff;
         line-height: 14px;
@@ -157,7 +157,7 @@ export default {
       @screen sm {
         font-size: 18px;
         line-height: 24px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #ffffff;
       }
@@ -174,7 +174,7 @@ export default {
       padding: 0 10px;
       .title {
         font-size: 40px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #ffffff;
         @screen md {
@@ -186,7 +186,7 @@ export default {
       }
       .contract {
         font-size: 26px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #ffffff;
         @screen md {
@@ -206,7 +206,7 @@ export default {
       .footer-content-item {
         margin-bottom: 20px;
         font-size: 10px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         font-weight: 400;
         color: #ffffff;
         line-height: 14px;

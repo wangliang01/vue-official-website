@@ -19,5 +19,11 @@ export default {
 .map {
   width: 100%;
   height: 400px;
+  @screen xl {
+    height: 600px;
+  }
+  @screen 2xl {
+    height: 800px;
+  }
 }
 </style>

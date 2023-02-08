@@ -176,7 +176,7 @@ export default {
           .enName,
           .cnName {
             font-size: 16px;
-            font-family: PingFang, Microsoft YaHei;
+            font-family: PingFang, Microsoft YaHei Regular;
             font-weight: 400;
             line-height: 16px;
             color: #282828;
@@ -196,7 +196,7 @@ export default {
           .enName,
           .cnName {
             font-size: 30px;
-            font-family: PingFang, Microsoft YaHei;
+            font-family: PingFang, Microsoft YaHei Regular;
             font-weight: 400;
             line-height: 30px;
             color: #282828;
@@ -223,7 +223,7 @@ export default {
       }
       .feature-desc {
         font-size: 14px;
-        font-family: PingFang, Microsoft YaHei;
+        font-family: PingFang, Microsoft YaHei Regular;
         line-height: 20px;
         font-weight: 400;
         color: #282828;
@@ -241,7 +241,7 @@ export default {
     .slogan {
       margin-top: 48px;
       font-size: 30px;
-      font-family: PingFang, Microsoft YaHei;
+      font-family: PingFang, Microsoft YaHei Regular;
       font-weight: 400;
       color: #292929;
       line-height: 32px;
