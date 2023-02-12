@@ -18,12 +18,11 @@ export default {
 <style lang="scss" scoped>
 .map {
   width: 100%;
-  height: 400px;
-  @screen xl {
-    height: 600px;
+  @screen xs {
+    height: 168px;
   }
-  @screen 2xl {
-    height: 800px;
+  @screen md {
+    height: 400px;
   }
 }
 </style>

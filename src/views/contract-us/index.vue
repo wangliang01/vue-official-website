@@ -21,7 +21,7 @@
         <p>联系人 郑乃强 158 5080 7351（微信同号）</p>
       </div>
 
-      <div class="xm:hidden md:flex md:mt-24">
+      <div class="xs:hidden md:flex md:mt-24">
         <div class="flex-1">
           <img
             src="../../assets/icons/contract-us_1@2x.png"
