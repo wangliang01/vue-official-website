@@ -89,7 +89,7 @@
     </div>
 
     <div
-      class="px-4 grid gap-x-2 gap-y-4 grid-cols-2 my-6 md:bg-white md:gap-x-4 md:grid-cols-4 md:py-4 md:px-3 md:mx-4"
+      class="px-4 grid gap-x-2 gap-y-4 grid-cols-2 my-6 md:bg-white md:gap-x-4 md:grid-cols-3 lg:grid-cols-4 md:py-4 md:px-3 md:mx-4"
     >
       <div class="case-item" @click="handleDetail">
         <img
@@ -222,7 +222,7 @@ export default {
 
   @screen md {
     width: 140px;
-    font-size: 26px;
+    font-size: 22px;
     font-family: PingFang, Microsoft YaHei Regular;
     font-weight: bold;
     color: #282828;
@@ -239,6 +239,10 @@ export default {
         display: none;
       }
     }
+  }
+
+  @screen lg {
+    font-size: 26px;
   }
 }
 
